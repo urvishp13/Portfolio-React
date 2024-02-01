@@ -157,11 +157,12 @@ a {
 }
 
 .work-section h2:first-child {
-  padding-top: 1em;
+  padding-top: .75em;
+  margin-bottom: .5em;
 }
 
 .work-section h2:nth-of-type(2) {
-  margin-top: 1.5em;
+  margin: .5em 0;
 }
 
 .tech-stack {
@@ -170,7 +171,7 @@ a {
   gap: 2em;
 }
 
-.tech {
+.tech > div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -187,6 +188,11 @@ a {
 
 .tech img {
   width: 75%;
+}
+
+.tech > p {
+  margin-top: .5em;
+  color: #331B5B;
 }
 
 .projects {
@@ -277,7 +283,6 @@ a {
 /* ////////// CONTACT SECTION ///////////// */
 
 .contact-section {
-  padding-top: 1em;
   text-align: center;
   height: calc(100vh - 5.9375rem - 4.9375rem);
 }
@@ -285,6 +290,8 @@ a {
 .contact-section-title {
   color: #3A00B5;
   font-size: 2rem;
+  padding-top: .75em;
+  margin-top: 0;
   font-weight: 800;
   text-transform: uppercase;
 }
