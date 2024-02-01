@@ -196,6 +196,8 @@ a {
   padding-bottom: .75em;
   width: 1100px;
   overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #7242D8 #331B5B;
 }
 
 .projects::-webkit-scrollbar {
@@ -230,6 +232,10 @@ a {
   border: none;
   border-right: 2px solid black;
   width: 100%;
+  max-height: 18.3rem;
+  object-fit: cover;
+  object-position: top;
+  overflow-y: scroll;
 }
 
 .project > *:not(:first-child) {
