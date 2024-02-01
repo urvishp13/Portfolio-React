@@ -472,27 +472,91 @@ footer {
     margin: 0 auto;
   }
   
-  .question::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-color: rgba(255, 255, 255, 0.588);
-    z-index: 1;
-  }
-  
   .question > p {
     font-size: 3.5rem;
-    color: #3A00B5;
-    z-index: 2;
   }
   
   .answer {
     width: fit-content;
-    color: #3A00B5;
     font-size: 1.15rem;
     text-align: center;
   }  
+
+  /* /////////// WORK SECTION //////////////// */
+
+  .work-section > h2 {
+    color: #3A00B5;
+    font-size: 1.5rem;
+    font-weight: 800;
+  }
+
+  .work-section h2:first-child {
+    padding-top: 1.5em;
+    margin-bottom: .5em;
+  }
+
+  .work-section h2:nth-of-type(2) {
+    margin: 1.5em 0 .5em;
+  }
+
+  .tech-stack,
+  .projects {
+    justify-content: start;
+    gap: 1.25em;
+    margin-left: auto;
+    width: 20rem;
+    overflow-x: scroll;
+    scrollbar-width: auto;
+    scrollbar-color: #7242D8 #331B5B;
+  }
+
+  .tech-stack::-webkit-scrollbar {
+    height: 0.5rem;
+  }
+
+  .tech-stack::-webkit-scrollbar-track {
+    border: 2px solid #331B5B;
+  }
+
+  .tech-stack::-webkit-scrollbar-thumb {
+    background-color: #7242D8;
+  }
+
+  .tech-stack::-webkit-scrollbar:vertical {
+    display: none;
+  }
+
+  .tech > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4.25rem;
+    height: 4.25rem;
+    background: #7242D8;
+  }
+
+  .tech svg {
+    width: 75%;
+    height: 3.0625rem;
+    color: white;
+  }
+
+  .tech img {
+    width: 75%;
+  }
+
+  .tech > p {
+    margin-top: .5em;
+    color: #331B5B;
+  }
+
+  .projects {
+    margin-right: 0;
+  }
+
+  .project {
+    scale: .95;
+    translate: -12px;
+  }
+
 }
