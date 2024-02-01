@@ -488,6 +488,7 @@ footer {
     color: #3A00B5;
     font-size: 1.5rem;
     font-weight: 800;
+    text-transform: uppercase;
   }
 
   .work-section h2:first-child {
@@ -557,6 +558,39 @@ footer {
   .project {
     scale: .95;
     translate: -12px;
+  }
+
+  /* ////////// CONTACT SECTION ///////////// */
+
+  .contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: calc(100vh - 3.9375rem - 4.9375rem);
+  }
+
+  .contact-section-title {
+    font-size: 1.5rem;
+  }
+
+  input, 
+  textarea,
+  .submit {
+    font-size: 1.25rem;
+    text-indent: 8px;
+    width: 80%;
+    height: 2.8125rem;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    font-size: 1.25rem;
+  }
+
+  textarea {
+    height: 7rem;
+    padding: .5em;
+    text-indent: 0;
   }
 
 }

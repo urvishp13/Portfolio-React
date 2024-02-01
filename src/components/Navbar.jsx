@@ -27,7 +27,7 @@ export default function Navbar() {
             </div>
             <FaBars className="hamburger" onClick={openMenu} />
             <ul className="nav-items">
-                <FaXmark className="close-burger" onClick={closeMenu} />
+                <FaXmark className="close-burger hide" onClick={closeMenu} />
                 <li><a href="#home-section">Home</a></li>
                 <li><a href="#about-section">About</a></li>
                 <li><a href="#work-section">Work</a></li>
