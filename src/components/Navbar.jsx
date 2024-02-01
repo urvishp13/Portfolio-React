@@ -5,15 +5,18 @@ export default function Navbar() {
 
     const menu =  document.querySelector(".hamburger")
     const navItems = document.querySelector(".nav-items")
+    const close = document.querySelector(".close-burger")
     
     function openMenu() {
         menu.classList.add("hide")
         navItems.classList.add("open-nav")
+        close.classList.remove("hide")
     }
 
     function closeMenu() {
         menu.classList.remove("hide")
         navItems.classList.remove("open-nav")
+        close.classList.add("hide")
     }
 
     return (

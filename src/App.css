@@ -423,6 +423,10 @@ footer {
     /* background: black; */
   }
 
+  .nav-items a {
+    color: black; /* temporary */ 
+  }
+
   .open-nav {
     display: block;
   }
@@ -454,4 +458,41 @@ footer {
   .professional-details span {
     font-size: 1.5rem;
   }
+
+  /* //////// ABOUT ////////// */
+
+  .about-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .question {
+    width: 19.125rem;
+    height: 19.125rem;
+    margin: 0 auto;
+  }
+  
+  .question::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.588);
+    z-index: 1;
+  }
+  
+  .question > p {
+    font-size: 3.5rem;
+    color: #3A00B5;
+    z-index: 2;
+  }
+  
+  .answer {
+    width: fit-content;
+    color: #3A00B5;
+    font-size: 1.15rem;
+    text-align: center;
+  }  
 }
