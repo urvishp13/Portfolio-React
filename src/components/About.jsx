@@ -1,7 +1,9 @@
+import questionMark from "../images/question-mark.png"
+
 export default function About() {
   return (
-    <section id="about-section" className="about-section">
-      <div className="question">
+    <section id="about-section" className="about-section" >
+      <div className="question" style={{ backgroundImage: `url(${questionMark})`}}>
         <p>WHO IS HE</p>
       </div>
       <div className="answer">

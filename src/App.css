@@ -115,7 +115,7 @@ body {
   width: 29.125rem;
   height: 29.125rem;
   margin-right: 2.31em;
-  background-image: url("images/question-mark.png");
+  /* background-image: url("images/question-mark.png"); */
   background-size: cover;
 }
 
