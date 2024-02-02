@@ -1,22 +1,29 @@
 import { FaBars } from "react-icons/fa"
 import { FaXmark } from "react-icons/fa6"
+import { useState } from "react"
 
 export default function Navbar() {
 
-    const menu =  document.querySelector(".hamburger")
-    const navItems = document.querySelector(".nav-items")
-    const close = document.querySelector(".close-burger")
-    
+    const [classes, setClasses] = useState({
+        menu: "hamburger", 
+        nav: "nav-items", 
+        close: "close-burger hide"
+    })
+
     function openMenu() {
-        menu.classList.add("hide")
-        navItems.classList.add("open-nav")
-        close.classList.remove("hide")
+        setClasses({
+            menu: "hamburger hide",
+            nav: "nav-items open-nav",
+            close: "close-burger"
+        })
     }
 
     function closeMenu() {
-        menu.classList.remove("hide")
-        navItems.classList.remove("open-nav")
-        close.classList.add("hide")
+        setClasses({
+            menu: "hamburger",
+            nav: "nav-items",
+            close: "close-burger hide"
+        })
     }
 
     return (
@@ -25,9 +32,9 @@ export default function Navbar() {
                 <img className="profile-img" src="images/urvish-square-2.png" alt="Urvish's picture"/>
                 <h1 className="profile-name">Urvish Patel</h1>
             </div>
-            <FaBars className="hamburger" onClick={openMenu} />
-            <ul className="nav-items">
-                <FaXmark className="close-burger hide" onClick={closeMenu} />
+            <FaBars className={classes.menu} onClick={openMenu} />
+            <ul className={classes.nav}>
+                <FaXmark className={classes.close} onClick={closeMenu} />
                 <li><a href="#home-section">Home</a></li>
                 <li><a href="#about-section">About</a></li>
                 <li><a href="#work-section">Work</a></li>
