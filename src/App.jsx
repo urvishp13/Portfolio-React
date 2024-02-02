@@ -9,13 +9,15 @@ import Footer from './components/Footer'
 
 export default function App() {
   return (
-    <main>
+    <div>
       <Navbar />
-      <Home />
-      <About />
-      <Work />
-      <Contact />
+      <main>
+        <Home />
+        <About />
+        <Work />
+        <Contact />
+      </main>
       <Footer />
-    </main>
+    </div>
   )
 }
