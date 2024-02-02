@@ -18,20 +18,27 @@ export default function Contact() {
         })
     }
 
-    function handleSubmit(event) {
-        event.preventDefault();
+    async function handleSubmit(event) {
+        event.preventDefault()
       
-        const myForm = event.target;
-        const formData = new FormData(myForm);
+        const myForm = event.target
+        const formData = new FormData(myForm)
       
-        fetch("/", {
+        await fetch("/", {
           method: "POST",
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
           body: new URLSearchParams(formData).toString(),
         })
-          .then(() => navigate("/thank-you/"))
-          .catch((error) => alert(error));
-      }      
+          .then(() => alert("Thank you for your submission"))
+          .catch((error) => alert(error))
+
+        // reset form
+        setFormData({
+            name: "", 
+            email: "",
+            message: ""
+        })
+    }      
 
     return (
         <section id="contact-section" className="contact-section">
@@ -66,6 +73,7 @@ export default function Contact() {
                     className="message-input"
                     name="message"
                     onChange={handleChange}
+                    value={formData.message}
                     required
                 />
                 <button className="submit">SEND</button>
