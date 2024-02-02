@@ -259,10 +259,13 @@ body {
   font-size: 1.25rem;
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: .25em;
   background-color: #7242D8;
   border: none;
   border-radius: 8px;
+  color: white;
+  text-decoration: none;
 }
 
 .project > a:nth-of-type(1) {
@@ -359,6 +362,8 @@ footer {
 }
 
 .socials > a {
+  display: flex;
+  align-items: center;
   margin-left: .15em;
   padding: 0;
   color: white;
@@ -429,7 +434,7 @@ footer {
   .nav-items a {
     justify-content: center;
     padding: 1em;
-    color: white; /* temporary */ 
+    color: white;
   }
 
   .open-nav {
@@ -483,11 +488,18 @@ footer {
   
   .answer {
     width: fit-content;
-    font-size: 1.15rem;
+    font-size: 1.125rem;
+    padding: 0 1em;
     text-align: center;
   }  
 
   /* /////////// WORK SECTION //////////////// */
+
+  .work-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
   .work-section > h2 {
     color: #3A00B5;
@@ -496,7 +508,7 @@ footer {
   }
 
   .work-section h2:first-child {
-    padding-top: 1.5em;
+    margin: 0;
     margin-bottom: .5em;
   }
 

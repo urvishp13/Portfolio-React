@@ -7,16 +7,15 @@ export default function About() {
       <div className="answer">
         <p>
           Urvish is a versatile individual. He is a Mechanical Engineering grad,
-          Frontend Developer, and a Music Producer. How are all these experiences
-          interrelated? They all utilize creativity and design.
+          a Music Producer, and a Frontend Developer. How are all these
+          experiences interrelated? They all utilize creativity and design.
         </p>
         <p>
-          Urvish knows how
-          to navigate the field of designer’s block. He can approach UX experience
-          from a practical perspective because of his engineering knowledge and
-          approach UI design from an imaginative perspective because of his music
-          knowledge. Frontend Development puts all these experiences together to
-          create products he never imagined creating.
+          Because of these experiences, Urvish knows how to navigate the field
+          of designer’s block, approach UX from a practical perspective, and
+          approach UI design from an imaginative, creative direction. Frontend
+          Development puts all his experiences together to allow him to create
+          products he never imagined making.
         </p>
       </div>
     </section>
