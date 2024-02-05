@@ -147,6 +147,7 @@ body {
 
 .work-section {
   text-align: center;
+  height: max-content;
 }
 
 .work-section > h2 {
@@ -222,7 +223,6 @@ body {
   max-height: 18.3rem;
   object-fit: cover;
   object-position: top;
-  overflow-y: scroll;
 }
 
 .project > *:not(:first-child) {
@@ -362,8 +362,7 @@ footer {
   }
 
   .home-section,
-  .about-section,
-  .work-section {
+  .about-section {
     height: calc(100vh - 3.9375rem);
   }
 
@@ -483,6 +482,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 1em;
   }
 
   .work-section > h2 {
@@ -492,39 +492,21 @@ footer {
   }
 
   .work-section h2:first-child {
-    margin: 0;
-    margin-bottom: .5em;
+    margin: 1em 0 .5em 0;
   }
 
   .work-section h2:nth-of-type(2) {
     margin: 1.5em 0 .5em;
   }
 
-  .tech-stack,
-  .projects {
-    justify-content: start;
+  .tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 1.25em;
-    margin-left: auto;
+    margin: 0 auto;
+    margin-top: 1em;
     width: 18rem;
-    overflow-x: scroll;
-    scrollbar-width: auto;
-    scrollbar-color: #7242D8 #331B5B;
-  }
-
-  .tech-stack::-webkit-scrollbar {
-    height: 0.5rem;
-  }
-
-  .tech-stack::-webkit-scrollbar-track {
-    border: 2px solid #331B5B;
-  }
-
-  .tech-stack::-webkit-scrollbar-thumb {
-    background-color: #7242D8;
-  }
-
-  .tech-stack::-webkit-scrollbar:vertical {
-    display: none;
   }
 
   .tech > div {
@@ -552,12 +534,41 @@ footer {
   }
 
   .projects {
-    margin-right: 0;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 1em;
+    margin-top: 1em;
   }
 
   .project {
-    scale: .95;
-    translate: -12px;
+    grid-template-columns: 1em 1fr 1em 1fr 1em;
+    grid-template-rows: 1em 10em 1em max-content 1em max-content 1em ;
+  }
+
+  .project > p {
+    grid-column: 2 / -2;
+    grid-row: 4 / 5;
+  }
+
+  .project > img {
+    grid-column: 1 / -1;
+    border-right: none;
+    object-position: top;
+    height: 11em;
+  }
+
+  .project > a:nth-of-type(1) {
+    justify-self: center;
+    grid-column: 2 / 3;
+    grid-row: -3 / -2;
+    width: 100%;
+  }
+  
+  .project > a:nth-of-type(2) {
+    justify-self: center;
+    grid-column: 4 / 5;
+    grid-row: -3 / -2;
+    width: 100%;
   }
 
   /* ////////// CONTACT SECTION ///////////// */
