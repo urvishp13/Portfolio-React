@@ -355,7 +355,7 @@ footer {
 
 /* ////////// MEDIA QUERIES //////////// */
 
-@media (min-width: 360px) and (max-width: 500px) {
+@media (min-width: 360px) and (max-width: 879px) {
 
   html {
     scroll-padding-top: 3.9375rem;
@@ -629,8 +629,79 @@ footer {
 
 }
 
-@media (min-width: 501px) {
+@media (min-width: 501px)  {
 
+  .projects {
+    width: 100%;
+    padding: 0 1em;
+  }
+
+  .project {
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: 1fr 1em 1fr 1em 1fr 1em;
+    grid-template-rows: 1em 11.3125rem 1em 4rem 1em;
+    border: 2px solid black;
+  }
+  
+  .project > * {
+    border: 2px solid black;
+  }
+  
+  .project > img {
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+    border: none;
+    border-right: 2px solid black;
+    width: 100%;
+    height: 18.3rem;
+    object-fit: cover;
+    object-position: top;
+  }
+  
+  .project > *:not(:first-child) {
+    padding: 1em;
+  }
+  
+  .project > p {
+    text-align: start;
+    grid-column: 3 / 6;
+    grid-row: 2 / 3;
+    margin: 0;
+    font-size: 1.15rem;
+  }
+  
+  .project > a {
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .25em;
+    background-color: #7242D8;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .project > a:nth-of-type(1) {
+    justify-self: center;
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
+    width: 100%;
+  }
+  
+  .project > a:nth-of-type(2) {
+    justify-self: center;
+    grid-column: 5 / 6;
+    grid-row: 4 / 5;
+    width: 100%;
+  }
+  
+}
+
+@media (min-width: 880px) {
+  
   .hamburger {
     display: none;
   }
@@ -638,5 +709,28 @@ footer {
   .close-burger {
     display: none;
   }
+
+  .projects {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2em;
+      margin: 0 auto;
+      padding-bottom: .75em;
+  }
+
+}
+
+@media (min-width: 1072px) {
+
+  .projects {
+    width: fit-content;
+  }
   
+  .project {
+    display: grid;
+    grid-template-columns: 10.6875rem 1em 8.40625rem 1em 8.40625rem 1em;
+    grid-template-rows: 1em 11.3125rem 1em 4rem 1em;
+    border: 2px solid black;
+  }
+
 }
