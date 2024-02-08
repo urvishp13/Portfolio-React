@@ -276,6 +276,9 @@ body {
 /* ////////// CONTACT SECTION ///////////// */
 
 .contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
   height: calc(100vh - 5.9375rem - 4.9375rem);
 }
@@ -284,7 +287,7 @@ body {
   color: #3A00B5;
   font-size: 2rem;
   padding-top: .75em;
-  margin-top: 0;
+  margin: 0;
   font-weight: 800;
   text-transform: uppercase;
 }
@@ -410,14 +413,6 @@ footer {
 
   .question > p {
     font-size: 6.5vw;
-  }
-
-  /* ///////// CONTACT SECTION /////////// */
-
-  .contact-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
   }
   
 }
@@ -707,7 +702,7 @@ footer {
 
   .close-burger {
     font-size: 1.75rem;
-    margin: .55em .5em 0 auto;
+    margin: .65em .05em 0 auto;
     cursor: pointer;
     background: black;
   }
