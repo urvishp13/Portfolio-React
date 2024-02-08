@@ -17,12 +17,11 @@ export default function About() {
             experiences interrelated? They all utilize creativity and design.
           </p>
           <p>
-            Music has provided Urvish with the ability to utilize objective and
-            subjective creativity—a skill necessary in UI design. Engineering has
-            allowed Urvish the ability to make practicial judgments on proper UX
-            design. And Frontend Development has provided Urvish with the outlet
-            to utilize all his past experiences all while doing what he loves:
-            making his creations tangible.
+            Music Production has provided Urvish the ability to utilize objective and
+            subjective creativity—a skill necessary to make UI designs appeal to users. Engineering Logic has
+            allowed Urvish the ability to remake overly complex UX designs into more
+            practical interfaces for busy users. And Frontend Skills have provided Urvish the tools to
+            utilize his past experiences to do what he loves: making web apps highly useable.
           </p>
         </div>
       </div>

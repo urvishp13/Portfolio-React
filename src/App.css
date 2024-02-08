@@ -422,16 +422,6 @@ footer {
   
 }
 
-@media (max-width: 1016px) {
-
-  /* /////// ABOUT SECTION //////// */
-
-  .answer {
-    font-size: 2.75vw;
-  }
-
-}
-
 @media (max-width: 1072px) {
   
   .tech-stack {
@@ -462,6 +452,16 @@ footer {
   
   .project > img {
     height: 18.3rem;
+  }
+
+}
+
+@media (max-width: 1030px) {
+
+  /* /////// ABOUT SECTION //////// */
+
+  .answer {
+    font-size: 1.4rem;
   }
 
 }
