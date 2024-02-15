@@ -6,7 +6,7 @@ export default function Home() {
                 <div className="professional-details">
                     <p>.introducing<span>(Urvish Patel)</span></p>
                     <p>.title<span>(Frontend Developer)</span></p>
-                    <p>.education<span>(Scrimba Frontend Developer Bootcamp)</span></p>
+                    <p>.education<span>(Scrimba)</span></p>
                     <p>.experience<span>(Software Developer)</span></p>
                 </div>
             </div>
